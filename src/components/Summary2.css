@@ -1,0 +1,10 @@
+
+.summary_ {
+
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw / 4) ;
+    height: calc(100vw / 8) ;
+
+    background-color: salmon;
+}
