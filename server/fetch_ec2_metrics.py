@@ -63,15 +63,18 @@ def publish_metrics():
     data = []
     for reservation in r['Reservations']:
         for instance in reservation['Instances']:
+    
             instance_id = instance['InstanceId']
+            state = instance["State"].get('Name')
+            
             res = get_ec2_metrics(instance_id=instance_id) #res is a list of metrics -> so use reduce to sum them up and get the average
-            # single_metric = functools.reduce(lambda a, b: a+b, res) / len(res)
-            # print(single_metric)
+            # time.sleep(3)
+            single_metric = functools.reduce(lambda a, b: a+b, res) / len(res)
            
-            # m = {"instanceid": instance_id, "metric": [single_metric]}
-            m = {"instanceid": instance_id, "metric": res}
-
         
+            # m = {"instanceid": instance_id, "metric": [single_metric], "single_metric": }
+            m = {"instanceid": instance_id, "metric": res, "reduced_metric": float(single_metric), "state": str(state)}
+
             
             data.append(m)
     

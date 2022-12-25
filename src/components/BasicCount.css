@@ -1,20 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Permanent+Marker&family=Unbounded:wght@300&display=swap');
+
+
+:root {
+    --container-width: calc(100vw / 8);
+   
+  }
+  
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    max-width: calc(100vw / 8) ;
-    max-height: calc(100vw / 8) ;
+    justify-content: space-around;
+    width: calc(100vw / 8) ;
+    height: calc(100vw / 8) ;
 
-    background: #926C8D;
-    color: white;
+    background: #00FF41;
+    color: black;
+    font-family: 'Permanent Marker', cursive;
     /* background-image: url("./Lambda_logo.svg"); */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    font-size: 1.8rem;
-    
-    
+    /* font-size: 1.1rem; */
+    /* font-weight: 100; */
 
 }
 
+
+ .graph  {
+    
+    padding-top: 70px;
+    width:  var(--container-width / 2);
+}
