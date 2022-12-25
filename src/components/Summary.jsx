@@ -4,6 +4,9 @@ import './Summary.css'
 
 export default function Summary({label}) {
   return (
-    <div className="summary">Summary</div>
+    <div className="summary">
+    
+      <h3>Sumary</h3>
+    </div>
   )
 }

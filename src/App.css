@@ -1,33 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Unbounded:wght@300&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Unbounded', cursive;
 }
 
 
 .main_container {
   
     background-color: grey;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 
 .main_container_inner {
     margin: auto;
 
-    width: 80%;
+    width: 82%;
     height: 100vh;
     background-color: black;
-    padding-top: 1%;
-
-
-
+    padding-top: .4%;
+    padding: auto;
 
 
 }
 
 .level1 {
+   
+    
     justify-content: space-evenly;
   
     /* margin: auto; */
@@ -36,11 +40,9 @@
   
    
     /* column-gap: 1px; */
-    row-gap: 1em;
+    grid-gap: 6px;
     grid-auto-rows: calc(100vw / 8)
 
-    /* grid-auto-rows: minmax(100px, auto); */
-    /* grid-auto-rows: 800px; */
 
 }
 

@@ -10,6 +10,9 @@
     background-color: salmon;
 }
 
+.summary > h3 {
+    text-align: center;
+}
 
 /* .container {
     display: flex;
